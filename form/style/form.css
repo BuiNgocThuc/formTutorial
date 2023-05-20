@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&family=Josefin+Sans:ital,wght@0,500;1,300&family=Montserrat+Alternates:ital,wght@0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,500&family=Poppins:ital,wght@1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btnSelect {
+    padding: .8rem 2.5rem;
+    outline: none;
+    border: none;
+    margin-right: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #179238;
+}
+
+.btnSelect:hover {
+    opacity: .8;
+}
+
+.btnSelect a {
+    color: black;
+}
+
+#Register {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    width: 30vw;
+    height: auto;
+    padding: 1.5rem 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#Register h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#Register fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    padding: 1rem 0.7em;
+}
+
+#Register fieldset input {
+    width: 100%;
+    height: 2rem;
+    padding: .5rem .8rem;
+    outline: none;
+    border-radius: 10rem;
+}
+
+#Register #btnRegister {
+    outline: none;
+    border: none;
+    padding: .5rem 5.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #20D6B9;
+    margin: auto;
+}
+
+#Register #btnRegister:hover {
+    opacity: .8;
+}
+
+#Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    width: 30vw;
+    height: auto;
+    padding: 1.5rem 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#Login h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#Login fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    padding: 1rem 0.7em;
+}
+
+#Login fieldset input {
+    width: 100%;
+    height: 2rem;
+    padding: .5rem .8rem;
+    outline: none;
+    border-radius: 10rem;
+}
+
+#Login #btnLogin {
+    outline: none;
+    border: none;
+    padding: .5rem 5.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #20D6B9;
+    margin: auto;
+}
+
+#Login #btnLogin:hover {
+    opacity: .8;
+}
+
+#Information {
+    background-color: white;
+    height: auto;
+    width: 30vw;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#Information h3 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#Information fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: none;
+}
+
+#Information .lblForm {
+    flex-basis: 9.5rem;
+    font-size: 1rem;
+}
+
+#Information .inputField {
+    flex: 1;
+    height: 1.5rem;
+    outline: none;
+    border-radius: .8rem;
+}
+
+#Information .inputField:not(div) {
+    border: 1px solid black;
+}
+
+#Information .inputField:focus {
+    border: 1px solid #CE511F;
+}
+
+#Information .inputField:not(select) {
+    padding: .5rem .8rem;
+}
+
+#Information select {
+    padding: 0 .4rem;
+}
+
+#Information #txtMessage {
+    width: 100%;
+    height: 5rem;
+    padding: .5rem;
+}
+
+#Information #txtSex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Information #txtSex label {
+    margin-right: 2rem;
+}
+
+#Information #txtSex input {
+    margin-right: .2rem;
+}
+
+#Information #txtHobbies {
+    margin: auto;
+}
+
+#Information .btn {
+    outline: none;
+    border: none;
+    padding: .5rem 3rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    width: 100%;
+    margin: .5rem;
+}
+
+#Information .btn:hover {
+    opacity: .8;
+}
+
+#Information #btnUpdate {
+    background-color: #20D6B9;
+}
+
+#Information #btnDelete {
+    background-color: #d63f3f;
+}

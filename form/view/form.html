@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="php/resolve.php" method="POST">
+            <h3>THÔNG TIN NGƯỜI DÙNG</h3>
+            <fieldset>
+                <label class="lblForm" for="txtName">Họ Tên: </label>
+                <input type="text" class="inputField" id="txtName" name="txtName" required autofocus tabindex="1">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtAge">Tuổi: </label>
+                <input type="number" class="inputField" id="txtAge" name="txtAge" required autofocus tabindex="2">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtPhone">Số Điện Thoại: </label>
+                <input type="tel" class="inputField" id="txtPhone" name="txtPhone" required
+                    pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b" tabindex="3">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtAddress">Địa Chỉ: </label>
+                <input type="text" class="inputField" id="txtAddress" name="txtAddress" required tabindex="4">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtEmail">Email: </label>
+                <input type="email" class="inputField" id="txtEmail" name="txtEmail" required tabindex="5">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtBirthday">Ngày Sinh: </label>
+                <input type="date" class="inputField" id="txtBirthday" name="txtBirthday" required tabindex="6">
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtSex">Giới Tính: </label>
+                <div id="txtSex" class="inputField">
+                    <input type="radio" id="txtMale" name="txtSex" value="Nam" tabindex="7">
+                    <label for="txtMale">Nam</label><br>
+                    <input type="radio" id="txtFemale" name="txtSex" value="Nữ" tabindex="8">
+                    <label for="txtFemale">Nữ</label><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtEduQual">Trình Độ Học Vấn:</label>
+                <select name="txtEduQual" class="inputField" id="txtEduQual" tabindex="9">
+                    <option value="optHighSchool">12/12</option>
+                    <option value="optBachelor">Cử Nhân</option>
+                    <option value="optMaster">Thạc Sĩ</option>
+                    <option value="optDoctor">Tiến Sĩ</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtHobbies">Sở Thích: </label>
+                <div id="txtHobbies">
+                    <input type="checkbox" id="txtGym" name="txtGym" value="Gym" tabindex="10">
+                    <label for="txtGym"> Tập Gym</label><br>
+                    <input type="checkbox" id="txtBook" name="txtBook" value="Book" tabindex="11">
+                    <label for="txtBook"> Đọc Sách</label><br>
+                    <input type="checkbox" id="txtGame" name="txtGame" value="Game" tabindex="12">
+                    <label for="txtGame"> Chơi Game</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label class="lblForm" for="txtMessage">Ghi Chú: </label>
+                <textarea placeholder="Để lại lời nhắn...." tabindex="13"  class="inputField" id="txtMessage"></textarea>
+            </fieldset>
+            <fieldset>
+                <input class="btn" id="btnSubmit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
